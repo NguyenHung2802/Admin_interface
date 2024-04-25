@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+i{
+    color: #fff;
+    cursor: pointer;
+}
+
+img{
+    object-fit: cover;
+    object-position: top;
+    border: 8px;
+}
+
+html,body{
+    /* background: linear-gradient(#050505, #18181d); */
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /* background: linear-gradient(#050505, #18181d); */
+}
+/* main-sidebar */
+
+.container .main-sidebar{
+    height: 100vh;
+    background-color: #18181d;
+    /* padding: 20px 36px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10000;
+    transition: all 0.6s ease;
+}
+
+.container .sidebar-logo{
+    background-color: #fff;
+    height: 86px;
+    text-align: center;
+}
+
+.container .sidebar-logo .sidebar-logo--line{
+    padding-top: 7px;
+}
+
+.container .user-panel{
+    display: flex;
+    justify-content: flex-start;
+    height: 73px;
+    background: #353245;
+}
+
+.container .user-panel .image{
+    margin-top: 11px;
+}
+
+.container .user-panel .image img{
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+.container .user-panel .info{
+    display: block;
+    padding: 20px 10px;
+    
+}
+
+.container .user-panel .info p{
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.container .user-panel .info i{
+    border-radius: 50%;
+    font-size: 12px;
+    color: green;
+}
+
+.container .main-sidebar .sidebar .main-menu .menu-feature{
+    height: 50px;
+    background: #141B1F;
+
+}
+
+.container .main-sidebar .sidebar .main-menu .menu-feature h3{
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 400;
+}
+
+.container .main-sidebar .sidebar .main-menu .sidebar-menu{
+    background-color: #fff;
+}
+
+.container .main-sidebar .sidebar .main-menu .sidebar-menu li{
+    height: 50px;
+    background: #222D32;
+}
+
+.container .main-sidebar .sidebar .main-menu .sidebar-menu li{
+    line-height: 50px;
+    padding-left: 20px;
+}
+
+.container .main-sidebar .sidebar .main-menu .sidebar-menu li a i{
+    margin-right: 10px;
+}
+
+.container .main-sidebar .sidebar .main-menu .sidebar-menu .treeview ul{
+    display: none;
+}
+
+.container .main-sidebar .sidebar .main-menu .sidebar-menu .treeview:active ul{
+    display: block;
+}
+/* main */
+
+.container main .sidebar-menu{
+    height: 86px;
+    background: #8F8F8F;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container main .sidebar-menu .treeview{
+    display: flex;
+    line-height: 86px;
+    margin-left: 20px;
+}
+
+.container main .sidebar-menu .treeview li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+.container main .sidebar-menu .treeview li a{
+    text-decoration: none;
+}
+
+.container main .sidebar-menu .treeview li a i{
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.container main .overview {
+    background: #ECF0F5;
+    height: auto;
+}
+
+.container main .overview .grid{
+    display: inline-block;
+
+}
+
+.container main .overview .grid .overview-content{
+    margin: 27px 50px;
+}
+
+.container main .overview .grid .overview-content p{
+    font-weight: 600;
+}
+
+.container main .overview .grid .row{
+    margin: 30px 40px;
+}
+
+.container main .overview .grid .row .col{
+    /* width: 150px; */
+    height: 200px;
+    margin-left: 10px ;
+    margin-right: 10px ;
+    background: #D70018;
+    border-radius: 10px 10px 0px 0px;
+    display: grid;
+    grid-template-rows: 8fr 1.5fr;
+}
+
+.container main .overview .grid .row .col .info{
+    line-height: 50px;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+.container main .overview .grid .row .col .info h1,
+.container main .overview .grid .row .col .info h2{
+    color: #fff;
+}
+
+.container main .overview .grid .row .col .detail{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #D70018;
+    margin-left: -10px;
+    margin-right: -10px;
+    /* max-width: calc(100% + 20px); */
+}
+
+.container main .overview .grid .row .col .detail p{
+    color: #fff;
+    text-align: center;
+    margin-top: 7px;
+}
+
+/* Footer */
+.container main footer {
+    height: 50px;
+    background: #D9D9D9;
+}
+
+.container main footer .company{
+    line-height: 50px;
+    text-align: center;
+}
+
+.container main footer .company p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
