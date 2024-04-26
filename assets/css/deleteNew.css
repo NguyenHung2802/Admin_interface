@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    background: #F5F5F5;
+}
+
+.container .delete{
+    margin: auto;
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 690px;
+    height: 350px;
+}
+
+.container .delete .head{
+    height: 130px;
+    display: block;
+}
+
+.container .delete .head .head-content {
+    display: flex;
+    justify-content: center;
+    line-height: 100px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.container .delete .head .head-icon {
+    float: right;
+    margin-top: -100px;
+    margin-right: 30px;
+    line-height: 100px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.container .delete .head .head-icon i{
+    color: #000;
+}
+
+.container .delete .head .head-icon a:hover i{
+    color: #FF414D;
+    opacity: 0.9;
+}
+
+.container .delete .head .head-icon a:active i{
+    color: #FF414D;
+    opacity: 0.5;
+}
+
+.container .delete .question{
+    height: 50px;
+    display: flex;
+    margin-left: 150px;
+}
+
+.container .delete .question p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.container .delete .submit{
+    height: 170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container .delete .submit .say-yes input{
+    float: right;
+    width: 237px;
+    height: 60px;
+    font-size: 24px;
+    color: #FFFFFF;
+    background: #FF414D;
+    border-radius: 10px;
+    border: 0px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.container .delete .submit .say-no input{
+    width: 237px;
+    height: 60px;
+    font-size: 24px;
+    color: #FFFFFF;
+    background: #FF414D;
+    border-radius: 10px;
+    border: 0px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.container .delete .submit .say-yes input:hover,
+.container .delete .submit .say-no input:hover{
+    opacity: 0.9;
+}
+
+
+.container .delete .submit .say-yes input:active,
+.container .delete .submit .say-no input:active{
+    opacity: 0.7;
+}
+
+
