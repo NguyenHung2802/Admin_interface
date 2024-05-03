@@ -165,6 +165,20 @@ html,body{
     font-size: 24px;
 }
 
+.container main .manage .manage-nav .manage-news .manage-news__head{
+    line-height: 74px;
+}
+
+.container main .manage .manage-nav .manage-news .manage-news__head p i{
+    color: #000;
+    font-size: 20px;
+}
+
+.container main .manage .manage-nav .manage-news .manage-news__head p span{
+    font-size: 20px;
+    padding-top: 5px;
+}
+
 .container main .overview {
     background: #ECF0F5;
     height: auto;

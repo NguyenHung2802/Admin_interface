@@ -156,7 +156,7 @@ html,body{
 
 /* Manage */
 .container main .manage {
-
+    background-color: #ECF0F5;
 }
 
 .container main .manage .manage-nav{
@@ -166,49 +166,49 @@ html,body{
     grid-template-columns: 2fr 1fr;
 }
 
-.container main .manage .manage-nav .manage-news{
+.container main .manage .manage-nav .manage-order{
     height: 74px;
     margin-left: 50px;
 }
 
-.container main .manage .manage-nav .manage-news .manage-news__head{
+.container main .manage .manage-nav .manage-order .manage-order__head{
     line-height: 74px;
 }
 
-.container main .manage .manage-nav .manage-news .manage-news__head p i{
+.container main .manage .manage-nav .manage-order .manage-order__head p i{
     color: #000;
     font-size: 20px;
 }
 
-.container main .manage .manage-nav .manage-news .manage-news__head p span{
+.container main .manage .manage-nav .manage-order .manage-order__head p span{
     font-size: 20px;
     padding-top: 5px;
 }
 
-.container main .manage .manage-nav .manage-news .manage-news__add{
+.container main .manage .manage-nav .manage-order .manage-order__add{
     display: flex;
     height: 50px;
 }
 
-.container main .manage .manage-nav .manage-news .manage-news__add .add-news{
+.container main .manage .manage-nav .manage-order .manage-order__add .add-order{
     height: 44px;
     width: 158px;
     border-radius: 10px;
     background-color: #FF414D;
 }
 
-.container main .manage .manage-nav .manage-news .manage-news__add .add-news{
+.container main .manage .manage-nav .manage-order .manage-order__add .add-order{
     line-height: 44px;
     text-align: center;
 }
 
-.container main .manage .manage-nav .manage-news .manage-news__add .add-news p{
+.container main .manage .manage-nav .manage-order .manage-order__add .add-order p{
     font-size: 16px;
     font-weight: 500;
     color: #fff;
 }
 
-.container main .manage .manage-nav .manage-news .manage-news__add .remove-news{
+.container main .manage .manage-nav .manage-order .manage-order__add .remove-order{
     width: 44px;
     height: 44px;
     margin-left: 50px;
@@ -216,28 +216,28 @@ html,body{
     background-color: #3A3F41;
 }
 
-.container main .manage .manage-nav .manage-news .manage-news__add .remove-news i{
+.container main .manage .manage-nav .manage-order .manage-order__add .remove-order i{
     font-size: 24px;
     padding-left: 11px;
     line-height: 44px;
     color: #fff;
 }
 
-.container main .manage .manage-nav .manage-news .manage-time{
+.container main .manage .manage-nav .manage-order .manage-time{
     height: 76px;
     display: flex;
 }
 
-.container main .manage .manage-nav .manage-news .manage-time__line{
+.container main .manage .manage-nav .manage-order .manage-time__line{
     line-height: 76px;
     margin-right: 30px;
 }
 
-.container main .manage .manage-nav .manage-news .manage-time__check{
+.container main .manage .manage-nav .manage-order .manage-time__check{
     line-height: 76px;
 }
 
-.container main .manage .manage-nav .manage-news .manage-time__check input{
+.container main .manage .manage-nav .manage-order .manage-time__check input{
     width: 170px;
     height: 40px;
     text-align: center;
@@ -246,12 +246,12 @@ html,body{
     border: 1px solid #000000;
 }
 
-.container main .manage .manage-nav .manage-news .manage-down{
+.container main .manage .manage-nav .manage-order .manage-down{
     line-height: 76px;
     padding: 0 10px;
 }
 
-.container main .manage .manage-nav .manage-news .manage-down i{
+.container main .manage .manage-nav .manage-order .manage-down i{
     color: #000;
     font-size: 24px;
 }
@@ -278,8 +278,9 @@ html,body{
 }
 
 .container main .manage .manage-list{
+    width: 90%;
     background-color: #ECF0F5;
-
+    margin-left: 50px;
 }
 
 .container main .manage .manage-list .grid .row.list{
@@ -291,11 +292,20 @@ html,body{
 
 .container main .manage .manage-list .grid .row.list .col b{
     line-height: 101px;
-    align-items: center;
+    font-size: 15px;
+    /* align-items: center; */
+}
+
+.container main .manage .manage-list .grid .row .col{
+    padding: 0;
 }
 
 .container main .manage .manage-list .grid .row .col:nth-child(1) {
     padding-left: 30px;
+}
+
+.container main .manage .manage-list .grid .row .col p{
+    font-size: 15px;
 }
 
 

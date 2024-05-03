@@ -59,11 +59,11 @@
 .container .delete .question{
     height: 50px;
     display: flex;
-    margin-left: 150px;
+    margin-left: 100px;
 }
 
 .container .delete .question p{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
 }
 

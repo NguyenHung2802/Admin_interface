@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/news.css">
+    <link rel="stylesheet" href="/assets/css/Category/category.css">
     <link rel="stylesheet" href="/assets/css/grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Quản lý bài viết</title>
@@ -32,7 +32,7 @@
                     </div>
                     <ul class="sidebar-menu" data-widget="tree">
                         <li>
-                            <a href="#">
+                            <a href="/index.html">
                                 <i class="fa-solid fa-house"></i> <span>Trang chủ</span>
                             </a>
                         </li>
@@ -51,17 +51,17 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="/pages/Order/Order.html">
                                 <i class="fa-solid fa-cart-shopping"></i> <span>Quản lý đơn hàng</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="/pages/Category/categgory.html">
                                 <i class="fa-solid fa-warehouse"></i> <span>Quản lý danh mục</span>
                             </a>
                         </li>
                         <li>
-                            <a href="./pages/news.html">
+                            <a href="/pages/News/news.html">
                                 <i class="fa-solid fa-newspaper"></i> <span>Quản lý tin tức</span>
                             </a>
                         </li>
@@ -103,145 +103,146 @@
             
             <div class="manage">
                 <div class="manage-nav">
-                    <div class="manage-news">
-                        <div class="manage-news__head">
-                            <p><i class="fa-solid fa-house"></i> <span>  / </span> Quản lý bài viết</p>
+                    <div class="manage-catelogy">
+                        <div class="manage-catelogy__head">
+                            <p><i class="fa-solid fa-house"></i> <span>  / </span> Quản lý danh mục</p>
                         </div>
 
-                        <div class="manage-news__add">
-                            <div class="add-news">
-                                <a href="addItems.html"><p> + Thêm bài viết</p></a>
+                        <div class="manage-catelogy__add">
+                            <div class="add-catelogy">
+                                <a href="/pages/Category/AddCatelogy.html"><p> + Thêm danh mục</p></a>
                             </div>
-                            <div class="remove-news">
-                                <a href="deleteNew.html"><i class="fa-solid fa-trash-can"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="manage-time">
-                            <div class="manage-time__line">
-                                <p>Thời gian</p>
-                            </div>
-                            <div class="manage-time__check">
-                                <input type="date" name="start">
-                            </div>
-                            <div class="manage-down">
-                                <i class="fa-solid fa-sort-down"></i>
-                            </div>
-                            
-                            <div class="manage-time__check">
-                                <input type="date" name="end">
-                            </div>
-                            
                         </div>
                     </div>
                     
                     <div class="manage-search">
-                        <input type="search" placeholder="Nhập từ khóa tìm kiếm"> <i class="fa-solid fa-magnifying-glass"></i> 
+                        <input type="search" placeholder="Nhập danh mục cần tìm kiếm"> <i class="fa-solid fa-magnifying-glass"></i> 
                     </div>
                 </div>
 
                 <div class="manage-list">
                     <div class="grid">
                         <div class="row list">
-                            <div class="col l-2 m-2 c-2">
-                                <b>Mã bài viết</b>
+                            <div class="col l-2-4 m-2-4">
+                                <b>Mã danh mục</b>
                             </div>
-                            <div class="col l-2 m-2 c-2">
-                                <b>Tên bài viết</b>
+                            <div class="col l-2-4 m-2-4">
+                                <b>Tên danh mục</b>
                             </div>
-                            <div class="col l-2 m-2 c-2">
-                                <b>Ngày đăng bài</b>
+                            <div class="col l-5 m-2-4">
+                                
                             </div>
-                            <div class="col l-5 m-5 c-5">
-                                <b>Nội dung</b>
-                            </div>
-                            <div class="col l-1 l-1 c-1">
-                                <b>Tác vụ</b>
+                            <div class="col l-2 m-2-4">
+                                <b>Thao tác</b>
                             </div>
                         </div>
 
                         <div class="row white">
-                            <div class="col l-2 m-2 c-2">
-                                <p>BV_0001</p>
+                            <div class="col l-2-4 m-2-4">
+                                <p>DM_0001</p>
                             </div>
-                            <div class="col l-2 m-2 c-2">
-                                <p>ƯU ĐÃI MUA NHÓM</p>
+                            <div class="col l-2-4 m-2-4">
+                                <p>Game hot giá sốc</p>
                             </div>
-                            <div class="col l-2 m-2 c-2">
-                                <p>22-01-2023</p>
+                            <div class="col l-5 m-2-4">
+                                
                             </div>
-                            <div class="col l-5 m-5 c-5">
-                                <p>Dành cho đối tác Nhà phân phối, cafe board game, trường học 
-                                Liên hệ Mr Tùng (0934433995)</p>
-                            </div>
-                            <div class="col l-1 l-1 c-1">
-                                <p><i class="fa-regular fa-pen-to-square"></i></p> 
+                            <div class="col l-2 m-2-4">
+                                <p>
+                                    <a href="/pages/Category/EditCategory.html"><i class="fa-regular fa-pen-to-square"></i></a>
+                                    <a href="/pages/Category/DeleteCategory.html"><i class="fa-solid fa-circle-xmark"></i></a>
+                                </p> 
                             </div>
                         </div>
 
                         <div class="row brow">
-                            <div class="col l-2 m-2 c-2">
-                                <p>BV_0002</p>
+                            <div class="col l-2-4 m-2-4">
+                                <p>DM_0001</p>
                             </div>
-                            <div class="col l-2 m-2 c-2">
-                                <p>THANH TOÁN DỄ DÀNG</p>
+                            <div class="col l-2-4 m-2-4">
+                                <p>Board game chiến thuật</p>
                             </div>
-                            <div class="col l-2 m-2 c-2">
-                                <p>24-01-2023</p>
+                            <div class="col l-5 m-2-4">
+                                
                             </div>
-                            <div class="col l-5 m-5 c-5">
-                                <p>Chuyển khoản ngân hàng hoặc thanh toán khi nhận hàng</p>
-                            </div>
-                            <div class="col l-1 l-1 c-1">
-                                <p><i class="fa-regular fa-pen-to-square"></i></p> 
+                            <div class="col l-2 m-2-4">
+                                <p>
+                                    <a href="/pages/Category/EditCategory.html"><i class="fa-regular fa-pen-to-square"></i></a>
+                                    <a href="/pages/Category/DeleteCategory.html"><i class="fa-solid fa-circle-xmark"></i></a>
+                                </p> 
                             </div>
                         </div>
 
                         <div class="row white">
-                            <div class="col l-2 m-2 c-2">
-                                <p>BV_0003</p>
+                            <div class="col l-2-4 m-2-4">
+                                <p>DM_0001</p>
                             </div>
-                            <div class="col l-2 m-2 c-2">
-                                <p>GIAO HÀNG TOÀN QUỐC</p>
+                            <div class="col l-2-4 m-2-4">
+                                <p>Board game gia đình</p>
                             </div>
-                            <div class="col l-2 m-2 c-2">
-                                <p>24-01-2023</p>
+                            <div class="col l-5 m-2-4">
+                                
                             </div>
-                            <div class="col l-5 m-5 c-5">
-                                <p>Hỗ trợ 63 tỉnh thành trên toàn quốc</p>
-                            </div>
-                            <div class="col l-1 l-1 c-1">
-                                <p><i class="fa-regular fa-pen-to-square"></i></p> 
+                            <div class="col l-2 m-2-4">
+                                <p>
+                                    <a href="/pages/Category/EditCategory.html"><i class="fa-regular fa-pen-to-square"></i></a>
+                                    <a href="/pages/Category/DeleteCategory.html"><i class="fa-solid fa-circle-xmark"></i></a>
+                                </p> 
                             </div>
                         </div>
 
                         <div class="row brow">
-                            <div class="col l-2 m-2 c-2">
-                                <p>BV_0004</p>
+                            <div class="col l-2-4 m-2-4">
+                                <p>DM_0001</p>
                             </div>
-                            <div class="col l-2 m-2 c-2">
-                                <p>TẠM DỪNG HOẠT ĐỘNG 
-                                    FANPAGE BOARD GAME </p>
+                            <div class="col l-2-4 m-2-4">
+                                <p>Board game bán chạy</p>
                             </div>
-                            <div class="col l-2 m-2 c-2">
-                                <p>24-01-2023</p>
+                            <div class="col l-5 m-2-4">
+                                
                             </div>
-                            <div class="col l-5 m-5 c-5">
-                                <p>Mọi thắc mắc hay liên hệ, các bạn hãy gửi về <br>
-                                    email: info@boardgame.vn<br>
-                                    Xin được cáo lỗi tới tất cả các fans Board Game. </p>
-                            </div>
-                            <div class="col l-1 l-1 c-1">
-                                <p><i class="fa-regular fa-pen-to-square"></i></p> 
+                            <div class="col l-2 m-2-4">
+                                <p>
+                                    <a href="/pages/Category/EditCategory.html"><i class="fa-regular fa-pen-to-square"></i></a>
+                                    <a href="/pages/Category/DeleteCategory.html"><i class="fa-solid fa-circle-xmark"></i></a>
+                                </p> 
                             </div>
                         </div>
 
                         <div class="row white">
-
+                            <div class="col l-2-4 m-2-4">
+                                <p>DM_0001</p>
+                            </div>
+                            <div class="col l-2-4 m-2-4">
+                                <p>Board game Việt Nam</p>
+                            </div>
+                            <div class="col l-5 m-2-4">
+                                
+                            </div>
+                            <div class="col l-2 m-2-4">
+                                <p>
+                                    <a href="/pages/Category/EditCategory.html"><i class="fa-regular fa-pen-to-square"></i></a>
+                                    <a href="/pages/Category/DeleteCategory.html"><i class="fa-solid fa-circle-xmark"></i></a>
+                                </p> 
+                            </div>
                         </div>
 
                         <div class="row brow">
-                            
+                            <div class="col l-2-4 m-2-4">
+                                <p>DM_0001</p>
+                            </div>
+                            <div class="col l-2-4 m-2-4">
+                                <p>Board game nhập Mỹ</p>
+                            </div>
+                            <div class="col l-5 m-2-4">
+                                
+                            </div>
+                            <div class="col l-2 m-2-4">
+                                <p>
+                                    <a href="/pages/Category/EditCategory.html"><i class="fa-regular fa-pen-to-square"></i></a>
+                                    <a href="/pages/Category/DeleteCategory.html"><i class="fa-solid fa-circle-xmark"></i></a>
+                                </p> 
+                            </div>
                         </div>
 
                         
@@ -251,7 +252,7 @@
 
             <div class="next-all">
                 <div class="next-text">
-                    <p>Tổng số bản ghi 60 | Số hàng trên mỗi trang 6</p>
+                    <p>Tổng số bản ghi 10 | Số hàng trên mỗi trang 6</p>
                 </div>
                 <div class="next-all__number">
                     <i class="fa-solid fa-angles-left"></i>
