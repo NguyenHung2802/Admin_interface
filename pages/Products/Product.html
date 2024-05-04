@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/Products/Products.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Quản lý sản phẩm</title>
+</head>
+<body>
+    <div class="container">
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                <div class="sidebar-logo">
+                    <div class="sidebar-logo--line">
+                        <img src="/assets/img/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="/assets/img/no-avt.png" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p>Xin chào: Admin</p>
+                        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                    </div>
+                </div>
+                <div class="main-menu">
+                    <div class="menu-feature">
+                        <h3>CHỨC NĂNG HỆ THỐNG</h3>
+                    </div>
+                    <ul class="sidebar-menu" data-widget="tree">
+                        <li>
+                            <a href="/index.html">
+                                <i class="fa-solid fa-house"></i> <span>Trang chủ</span>
+                            </a>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa-brands fa-ubuntu"></i></i> <span>Quản lý sản phẩm</span>
+                            </a>
+                            <!-- <ul class="treeview-menu">
+                                <li><a href="#"><i class="fa fa-circle-o"></i> Danh sách sản phẩm</a></li>
+                                <li><a href="#"><i class="fa fa-circle-o"></i> Thêm mới sản phẩm</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-circle-user"></i> <span>Quản lý tài khoản</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/Order/Order.html">
+                                <i class="fa-solid fa-cart-shopping"></i> <span>Quản lý đơn hàng</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/Category/categgory.html">
+                                <i class="fa-solid fa-warehouse"></i> <span>Quản lý danh mục</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/News/news.html">
+                                <i class="fa-solid fa-newspaper"></i> <span>Quản lý tin tức</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-chart-simple"></i> <span>Quản lý báo cáo/thống kê</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-regular fa-envelope"></i> <span>Quản lý đánh giá</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </aside>
+        <main>
+            <div class="sidebar-menu">
+                <div class=""></div>
+                <ul class="treeview">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-hand-pointer"></i> <span>Xem Website</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-bell"></i> <span>Thông báo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-right-from-bracket"></i> <span>Đăng xuất</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="manage">
+                <div class="manage-nav">
+                    <div class="manage-catelogy">
+                        <div class="manage-catelogy__head">
+                            <p><i class="fa-solid fa-house"></i> <span>  / </span> <a href="Product.html">Quản lý sản phẩm</a></p>
+                        </div>
+
+                        <div class="manage-catelogy__add">
+                            <div class="add-catelogy">
+                                <a href="AddProduct.html"><p> + Thêm sản phẩm</p></a>
+                            </div>
+                            <div class="remove-news">
+                                <a href="DeleteProduct.html"><i class="fa-solid fa-trash-can"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="manage-chose">
+                        <div class="manage-search">
+                            <input type="text" placeholder="Nhập nhân viên cần tìm kiếm"> <i class="fa-solid fa-magnifying-glass"></i> 
+                        </div>
+
+                        <div class="manage-choose">
+                            <select name="cars">
+                                <option value="Chọn danh mục">Chọn danh mục</option>
+                                <option value="Game">Game</option>
+                                <option value="chien">Chiến thuật</option>
+                                <option value="truyện">Truyện</option>
+                              </select>
+                        </div>
+                        
+                        <div class="manage-choose">
+                            <select name="cars">
+                                <option value="Chọn nhà sản xuất" placeholder="Chọn nhà sản xuất"> Chọn nhà sản xuất</option>
+                                <option value="Oppo">Oppo</option>
+                                <option value="Vandersal">Vandersal</option>
+                                <option value="audi">Audi</option>
+                              </select>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="manage-list">
+                    <div class="grid">
+                        <div class="row list">
+                            <div class="col l-2 m-2">
+                                <b>Mã sản phẩm</b>
+                            </div>
+                            <div class="col l-3 m-2">
+                                <b>Tên sản phẩm</b>
+                            </div>
+                            <div class="col l-4 m-2">
+                                <b>Mô tả sản phẩm</b>
+                            </div>
+                            <div class="col l-1 m-3">
+                                <b>Giá SP</b>
+                            </div>
+                            <div class="col l-1 m-1">
+                                <b>Số SP</b>
+                            </div>
+                            <div class="col l-1 m-1">
+                                <b>Tác vụ</b>
+                            </div>
+                        </div>
+
+                        <div class="row white">
+                            <div class="col l-2 m-2">
+                                <p>SP_002</p>
+                            </div>
+                            <div class="col l-3 m-2">
+                                <p>Thần Sầu - truy tìm bàn tay vàng trong làng sầu riêng</p>
+                            </div>
+                            <div class="col l-4 m-2">
+                                <p>Được biết đến với cái tên Vua Trái Cây. Sầu riêng là trái cây yêu thích của Singapore. Đây là loại trái cây rất nôit tiếng</p>
+                            </div>
+                            <div class="col l-1 m-3">
+                                <p>159.000</p>
+                            </div>
+                            <div class="col l-1 m-1">
+                                <p>1000</p>
+                            </div>
+                            <div class="col l-1 m-1">
+                                <p><a href="AddProduct.html"><i class="fa-regular fa-pen-to-square"></i></a></p>
+                            </div>
+                        </div>
+
+                        <div class="row white">
+                            <div class="col l-2 m-2">
+                                <p>SP_003</p>
+                            </div>
+                            <div class="col l-3 m-2">
+                                <p>Battle Line - Chiến thần vũ trụ</p>
+                            </div>
+                            <div class="col l-4 m-2">
+                                <p>Board Game Việt Nam vừa qua đã mua bán quyền gameplay gây nghiện cyar Battle Lin.</p>
+                            </div>
+                            <div class="col l-1 m-3">
+                                <p>799.000</p>
+                            </div>
+                            <div class="col l-1 m-1">
+                                <p>1200</p>
+                            </div>
+                            <div class="col l-1 m-1">
+                                <p><a href="AddProduct.html"><i class="fa-regular fa-pen-to-square"></i></a></p>
+                            </div>
+                        </div>
+
+                        <div class="row white">
+                            <div class="col l-2 m-2">
+                                <p>SP_004</p>
+                            </div>
+                            <div class="col l-3 m-2">
+                                <p>Red7 - Trò chơi đạt đề cử Board game gia đình hay nhất 2024</p>
+                            </div>
+                            <div class="col l-4 m-2">
+                                <p>Đã quá quen thuộc với Board Game và yêu thích những sự thay đổi trong game thì đây chính là lựa chọn tuyệt vời.</p>
+                            </div>
+                            <div class="col l-1 m-3">
+                                <p>259.000</p>
+                            </div>
+                            <div class="col l-1 m-1">
+                                <p>5000</p>
+                            </div>
+                            <div class="col l-1 m-1">
+                                <p><a href="AddProduct.html"><i class="fa-regular fa-pen-to-square"></i></a></p>
+                            </div>
+                        </div>
+
+
+                        <div class="row white">
+                            <div class="col l-2 m-2">
+                                <p>SP_005</p>
+                            </div>
+                            <div class="col l-3 m-2">
+                                <p>Major Arcana</p>
+                            </div>
+                            <div class="col l-4 m-2">
+                                <p>Nếu bạn là người yêu thích những bộ game với Avatar thì đây là game danh cho bạn!</p>
+                            </div>
+                            <div class="col l-1 m-3">
+                                <p>699.000</p>
+                            </div>
+                            <div class="col l-1 m-1">
+                                <p>1000</p>
+                            </div>
+                            <div class="col l-1 m-1">
+                                <p><a href="AddProduct.html"><i class="fa-regular fa-pen-to-square"></i></a></p>
+                            </div>
+                        </div>
+
+                        <div class="row white">
+                            <div class="col l-2 m-2">
+                                <p>SP_001</p>
+                            </div>
+                            <div class="col l-3 m-2">
+                                <p>Trò chơi Cờ Ô Chữ, phá vỡ mọi giới hạn</p>
+                            </div>
+                            <div class="col l-4 m-2">
+                                <p>Cờ Ô Chữ là một rờ chơi dành cho những người yêu và đam mê Tiếng Việt. Với lối chơi giản dị , đơn giản.</p>
+                            </div>
+                            <div class="col l-1 m-3">
+                                <p>699.000</p>
+                            </div>
+                            <div class="col l-1 m-1">
+                                <p>1000</p>
+                            </div>
+                            <div class="col l-1 m-1">
+                                <p><a href="AddProduct.html"><i class="fa-regular fa-pen-to-square"></i></a></p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="next-all">
+                <div class="next-text">
+                    <p>Tổng số bản ghi 10 | Số hàng trên mỗi trang 6</p>
+                </div>
+                <div class="next-all__number">
+                    <i class="fa-solid fa-angles-left"></i>
+                    <i class="fa-solid fa-angle-left"></i>
+
+                    <div class="next-text__number">
+                        <div class="text__number">
+                            <p>1</p>
+                        </div>
+                        <div class="text__number">
+                            <p>2</p>
+                        </div>
+                        <div class="text__number">
+                            <p>3</p>
+                        </div>
+                        <div class="text__number">
+                            <p>...</p>
+                        </div>
+                        <div class="text__number">
+                            <p>10</p>
+                        </div>
+                    </div>
+
+                    <i class="fa-solid fa-angle-right"></i>
+                    <i class="fa-solid fa-angles-right"></i>
+                </div>
+            </div>
+
+            <footer>
+                <div class="company">
+                    <p>Công ty TNHH BoardGameZone</p>
+                </div>
+            </footer>
+
+        </main>  
+    </div>
+</body>
+</html>

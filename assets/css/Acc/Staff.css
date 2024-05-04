@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+i{
+    color: #fff;
+    cursor: pointer;
+}
+
+img{
+    object-fit: cover;
+    object-position: top;
+    border: 8px;
+}
+
+html,body{
+    /* background: linear-gradient(#050505, #18181d); */
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /* background: linear-gradient(#050505, #18181d); */
+}
+
+.container .main-sidebar{
+    height: 100vh;
+    background-color: #18181d;
+    /* padding: 20px 36px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10000;
+    transition: all 0.6s ease;
+}
+
+.container .sidebar-logo{
+    background-color: #fff;
+    height: 86px;
+    text-align: center;
+}
+
+.container .sidebar-logo .sidebar-logo--line{
+    padding-top: 7px;
+}
+
+.container .user-panel{
+    display: flex;
+    justify-content: flex-start;
+    height: 73px;
+    background: #353245;
+}
+
+.container .user-panel .image{
+    margin-top: 11px;
+}
+
+.container .user-panel .image img{
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+.container .user-panel .info{
+    display: block;
+    padding: 20px 10px;
+    
+}
+
+.container .user-panel .info p{
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.container .user-panel .info i{
+    border-radius: 50%;
+    font-size: 12px;
+    color: green;
+}
+
+.container .main-sidebar .sidebar .main-menu .menu-feature{
+    height: 50px;
+    background: #141B1F;
+
+}
+
+.container .main-sidebar .sidebar .main-menu .menu-feature h3{
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 400;
+}
+
+.container .main-sidebar .sidebar .main-menu .sidebar-menu{
+    background-color: #fff;
+}
+
+.container .main-sidebar .sidebar .main-menu .sidebar-menu li{
+    height: 50px;
+    background: #222D32;
+}
+
+.container .main-sidebar .sidebar .main-menu .sidebar-menu li{
+    line-height: 50px;
+    padding-left: 20px;
+}
+
+.container .main-sidebar .sidebar .main-menu .sidebar-menu li a i{
+    margin-right: 10px;
+}
+
+.container .main-sidebar .sidebar .main-menu .sidebar-menu .treeview ul{
+    display: none;
+}
+
+.container .main-sidebar .sidebar .main-menu .sidebar-menu .treeview:active ul{
+    display: block;
+}
+
+.container main .sidebar-menu{
+    height: 86px;
+    background: #8F8F8F;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container main .sidebar-menu .treeview{
+    display: flex;
+    line-height: 86px;
+    margin-left: 20px;
+}
+
+.container main .sidebar-menu .treeview li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+.container main .sidebar-menu .treeview li a{
+    text-decoration: none;
+}
+
+.container main .sidebar-menu .treeview li a i{
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+/* Manage */
+.container main .manage {
+    background-color: #ECF0F5;
+}
+
+.container main .manage .manage-nav{
+    /* margin-bottom: 50px solid #ECF0F5; */
+    height: 250px;
+    display: block;
+    /* background: #ECF0F5; */
+}
+
+.container main .manage .manage-nav .manage-catelogy{
+    /* height: 74px; */
+    margin-left: 50px;
+}
+
+.container main .manage .manage-nav .manage-catelogy .manage-catelogy__head{
+    line-height: 74px;
+}
+
+.container main .manage .manage-nav .manage-catelogy .manage-catelogy__head p i{
+    color: #000;
+    font-size: 20px;
+}
+
+.container main .manage .manage-nav .manage-catelogy .manage-catelogy__head p a{
+    color: #000;
+}
+
+.container main .manage .manage-nav .manage-catelogy .manage-catelogy__head p span{
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.container main .manage .manage-nav .manage-catelogy .manage-catelogy__add{
+    display: flex;
+    height: 50px;
+}
+
+.container main .manage .manage-nav .manage-catelogy .manage-catelogy__add .add-catelogy{
+    height: 44px;
+    width: 158px;
+    border-radius: 10px;
+    background-color: #FF414D;
+}
+
+.container main .manage .manage-nav .manage-catelogy .manage-catelogy__add .add-catelogy{
+    line-height: 44px;
+    text-align: center;
+}
+
+.container main .manage .manage-nav .manage-catelogy .manage-catelogy__add .add-catelogy a{
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #fff;
+}
+
+.container main .manage .manage-nav .manage-catelogy .manage-catelogy__add .remove-news{
+    width: 44px;
+    height: 44px;
+    margin-left: 50px;
+    border-radius: 50%;
+    background-color: #3A3F41;
+}
+
+.container main .manage .manage-nav .manage-catelogy .manage-catelogy__add .remove-news i{
+    font-size: 24px;
+    padding-left: 11px;
+    line-height: 44px;
+    color: #fff;
+}
+
+.container main .manage .manage-nav .manage-catelogy .manage-down{
+    line-height: 76px;
+    padding: 0 10px;
+}
+
+.container main .manage .manage-nav .manage-catelogy .manage-down i{
+    color: #000;
+    font-size: 24px;
+}
+
+/* Search */
+.container main .manage .manage-nav .manage-search{
+    margin-left: 50px;
+    line-height: 110px;
+}
+
+.container main .manage .manage-nav .manage-search input{
+    width: 396px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+    background: #D9D9D9;
+    border-bottom: 1px solid #000000;
+}
+
+.container main .manage .manage-nav .manage-search i{
+    color: #000;
+    font-size: 20px;
+    line-height: 40px;
+    margin-left: -30px;
+}
+
+.container main .manage .manage-list{
+    width: 90%;
+    background-color: #ECF0F5;
+    margin-left: 50px;
+}
+
+.container main .manage .manage-list .grid{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.container main .manage .manage-list .grid .row.list{
+    height: 101px;
+    background: #F8FAFD;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.container main .manage .manage-list .grid .row.list .col b{
+    line-height: 101px;
+    font-size: 14px;
+    align-items: center;
+}
+
+.container main .manage .manage-list .grid .row .col:nth-child(1) {
+    padding-left: 30px;
+}
+
+
+.container main .manage .manage-list .grid .row.white{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 70px;
+    background: #E8EBEF;
+}
+
+.container main .manage .manage-list .grid .row.white p{
+    font-size: 14px;
+}
+
+.container main .manage .manage-list .grid .row p{
+    /* line-height: 85px; */
+    margin: 20px 0px 20px 0px;
+}
+
+.container main .manage .manage-list .grid .row p i{
+    font-size: 24px;
+    color: #F592A9;
+    align-content: center;
+    padding-right: 20px;
+}
+
+.container main .manage .manage-list .grid .row p .fa-circle-xmark{
+    font-size: 24px;
+    color: #F44336;
+    align-content: center;
+}
+
+.container main .manage .manage-list .grid .row.brow{
+    height: 86px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: rgba(217, 217, 217, 0.2);
+}
+
+.container main .next-all{
+    height: 150px;
+    background: #ECF0F5;
+}
+
+.container main .next-all .next-text{
+    height: 70px;
+}
+
+.container main .next-all .next-text p{
+    line-height: 70px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.container main .next-all .next-all__number{
+    display: flex;
+    height: 80px;
+    justify-content: center;
+}
+
+.container main .next-all .next-all__number i{
+    font-size: 18px;
+    color: #000;
+    margin: 0px 20px;
+}
+
+.container main .next-all .next-all__number .next-text__number{
+    display: flex;
+    margin-top: -10px;
+}
+
+.container main .next-all .next-all__number .next-text__number .text__number:nth-child(1){
+    height: 35px;
+    width: 30px;
+    background-color: #353245;
+    border-radius: 10px;
+    margin: 0px 5px;
+}
+
+.container main .next-all .next-all__number .next-text__number .text__number:nth-child(1) p{
+    color: #fff;
+}
+
+.container main .next-all .next-all__number .next-text__number .text__number{
+    height: 35px;
+    width: 30px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    margin: 0px 5px;
+}
+
+.container main .next-all .next-all__number .next-text__number .text__number p{
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.container main footer {
+    height: 50px;
+    background: #D9D9D9;
+}
+
+.container main footer .company{
+    line-height: 50px;
+    text-align: center;
+}
+
+.container main footer .company p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

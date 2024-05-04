@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/Order/AddOrder.css">
+    <link rel="stylesheet" href="/assets/css/Products/Addproduct.css">
     <link rel="stylesheet" href="/assets/css/grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Thêm bài viết</title>
+    <title>Quản lý sản phẩm</title>
 </head>
 <body>
     <div class="container">
@@ -61,7 +61,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="order.html">
+                            <a href="product.html">
                                 <i class="fa-solid fa-newspaper"></i> <span>Quản lý tin tức</span>
                             </a>
                         </li>
@@ -103,125 +103,88 @@
             
             <div class="manage">
                 <div class="manage-nav">
-                    <div class="manage-order">
-                        <div class="manage-order__head">
-                            <p><i class="fa-solid fa-house"></i> <span>  / <a href="Order.html"></span> Quản lý đơn hàng <span></span></a>   / </span> Thêm đơn hàng</p>
+                    <div class="manage-product">
+                        <div class="manage-news__head">
+                            <p><i class="fa-solid fa-house"></i> <span>  / <a href="Product.html"></span> Quản lý sản phẩm <span></span></a>   / </span> Thêm sản phẩm</p>
                         </div>
 
                         <div class="manage-close">
-                            <a href="order.html">
+                            <a href="Product.html">
                                 <i class="fa-solid fa-left-long"></i>
                             </a>
                         </div>
                     </div>
 
-                   
-                    <div class="create-order">
+                    <div class="manage-image">
+                        <div class="manage-image__add">
+                            <!-- <input type="image" name="" id=""> -->
+                            <i class="fa-solid fa-image"></i>
+                            <p>Hình ảnh của Sản phẩm</p>
+                        </div>
+                    </div>
+                
+                    <div class="create-product">
                         <div class="grid">
                             <div class="row">
                                 <div class="col l-6">
-                                    <p>Mã đơn hàng:</p>
-                                    <input type="text" placeholder="DH_0009">
+                                    <p>Mã Sản phẩm:</p>
+                                    <input type="text" placeholder="SP_001">
                                 </div>
                                 <div class="col l-6">
-                                    <p>Tên khách hàng:</p>
+                                    <select name="cars">
+                                        <option value="Chọn nhà sản xuất" placeholder="Chọn nhà sản xuất"> Chọn nhà sản xuất</option>
+                                        <option value="Oppo">Oppo</option>
+                                        <option value="Vandersal">Vandersal</option>
+                                        <option value="audi">Audi</option>
+                                      </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col l-6">
+                                    <p>Tên tài khoản:</p>
                                     <input type="text" placeholder="Lê Bá Thành">
                                 </div>
+                                <div class="col l-6">
+                                    <select name="cars">
+                                        <option value="Chọn danh mục">Chọn danh mục</option>
+                                        <option value="Game">Game</option>
+                                        <option value="chien">Chiến thuật</option>
+                                        <option value="truyện">Truyện</option>
+                                    </select>
+                                </div>
                             </div>
 
                             <div class="row">
                                 <div class="col l-6">
-                                    <p>Thời gian:</p>
-                                    <input type="date" placeholder="05/02/2024">
+                                    <p>Giá Sản phẩm:</p>
+                                    <input type="text" placeholder="100.000đ">
                                 </div>
                                 <div class="col l-6">
-                                    <p>Mã nhân viên:</p>
-                                    <input type="text" placeholder="NV_0005">
+                                    <p>Số lượng tồn:</p>
+                                    <input type="text" placeholder="Số lượng tồn">
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="col l-6">
-                                    <p>Địa chi giao hàng:</p>
-                                    <input type="text" placeholder="Thanh Trì - Hoàng Mai - Hà Nội">
-                                </div>
-                                <div class="col l-6">
-                                    <p>Tổng tiền:</p>
-                                    <input type="text" placeholder="150.000đ">
+                            <div class="row content1">
+                                <div class="col l-12">
+                                    <p>Nội dung</p>
                                 </div>
                             </div>
-                            
-                            <div class="content">
-                                <div class="row content1">
-                                    <div class="col l-12">
-                                        <p>Danh sách sản phẩm</p>
-                                    </div>
+                            <div class="row content2">
+                                <div class="col l-12">
+                                    <input type="text" placeholder="Nội dung">
                                 </div>
-                                <div class="row content2">
-                                    <div class="col l-4">
-                                        <b>Tên sản phẩm</b>
-                                    </div>
-                                    <div class="col l-3">
-                                        <b>Số lượng mua</b>
-                                    </div>
-                                    <div class="col l-3">
-                                        <b>Giá sản phẩm</b>
-                                    </div>
-                                    <div class="col l-2">
-                                        <b>Trạng thái</b>
-                                    </div>
-                                </div>
-                                <div class="row white">
-                                    <div class="col l-4">
-                                        <p>Tiểu thuyết bí ẩn làng ma sói</p>
-                                    </div>
-                                    <div class="col l-3">
-                                        <p>01</p>
-                                    </div>
-                                    <div class="col l-3 price">
-                                        <p>150.000</p>
-                                    </div>
-                                    <div class="col l-2">
-                                        <a href=""><i class="fa-solid fa-circle-xmark"></i></a>
-                                    </div>
-                                </div>
-                                <div class="row brow">
-                                    <div class="col l-4">
-                                        <p>Truyện tranh Nobita</p>
-                                    </div>
-                                    <div class="col l-3">
-                                        <p>02</p>
-                                    </div>
-                                    <div class="col l-3 price">
-                                        <p>250.000</p>
-                                    </div>
-                                    <div class="col l-2">
-                                        <a href=""><i class="fa-solid fa-circle-xmark"></i></a>
-                                    </div>
-                                </div>
-
-                                <div class="row white">
-                                </div>
-
-                                <div class="row brow">
-                                </div>
-
-                                <div class="row white">
-                                </div>
-
-                                <div class="row brow">
-                                </div>
-                                
                             </div>
 
                             <div class="submit">
                                 <div class="submit-new">
-                                    <a href="order.html"><input type="submit" value="Làm mới"></a>
+                                    <a href="product.html"><input type="submit" value="Làm mới"></a>
                                     
                                 </div>
 
                                 <div class="submit-add">
-                                    <a href="order.html"><input type="submit" value="Thêm"></a>
+                                    <a href="product.html"><input type="submit" value="Thêm"></a>
                                     
                                 </div>
                             </div>
