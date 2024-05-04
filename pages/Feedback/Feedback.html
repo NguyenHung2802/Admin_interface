@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/Acc/Staff.css">
+    <link rel="stylesheet" href="/assets/css/Feedback/Feedback.css">
     <link rel="stylesheet" href="/assets/css/grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Quản lý bài viết</title>
+    <title>Quản lý phản hồi</title>
 </head>
 <body>
     <div class="container">
@@ -103,132 +103,194 @@
             
             <div class="manage">
                 <div class="manage-nav">
-                    <div class="manage-catelogy">
-                        <div class="manage-catelogy__head">
-                            <p><i class="fa-solid fa-house"></i> <span> / <a href="/pages/Account/Acc.html"> Quản lý tài khoản </span></a>  / </span> Quản lý khách hàng</p>
+                    <div class="manage-news">
+                        <div class="manage-news__head">
+                            <p><i class="fa-solid fa-house"></i> <span>  / </span> Quản lý đánh giá </p>
                         </div>
 
-                        <div class="manage-catelogy__add">
-                            <div class="add-catelogy">
-                                <a href="AddClient.html"><p> + Thêm khách hàng</p></a>
+                        <div class="manage-choose">
+                            <div class="manage-search">
+                                <input type="search" placeholder="Nhập tên sản phẩm cần tìm kiếm" required> <i class="fa-solid fa-magnifying-glass"></i> 
                             </div>
-                            <div class="remove-news">
-                                <a href="DeleteClient.html"><i class="fa-solid fa-trash-can"></i></a>
+
+                            <div class="manage-time">
+                                <div class="manage-time__line">
+                                    <p>Thời gian</p>
+                                </div>
+                                <div class="manage-time__check">
+                                    <input type="date" name="start" required>
+                                </div>
+                                <div class="manage-down">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </div>
+                                
+                                <div class="manage-time__check">
+                                    <input type="date" name="end" required>
+                                </div>
                             </div>
                         </div>
 
+                        
                     </div>
                     
-                    <div class="manage-search">
-                        <input type="text" placeholder="Nhập khách hàng cần tìm kiếm"> <i class="fa-solid fa-magnifying-glass"></i> 
-                    </div>
                 </div>
 
                 <div class="manage-list">
                     <div class="grid">
                         <div class="row list">
-                            <div class="col l-2 m-2">
+                            <div class="col l-2 m-2 c-2">
+                                <b>Mã đánh giá</b>
+                            </div>
+                            <div class="col l-2 m-2 c-2">
                                 <b>Mã khách hàng</b>
                             </div>
-                            <div class="col l-2 m-2">
-                                <b>Tên đăng nhập</b>
+                            <div class="col l-2 m-2 c-2">
+                                <b>Mã sản phẩm</b>
                             </div>
-                            <div class="col l-2 m-2">
-                                <b>Mật khẩu</b>
+                            <div class="col l-1 m-2 c-2">
+                                <b>Rate</b>
                             </div>
-                            <div class="col l-2 m-2">
-                                <b>Tên khách hàng</b>
+                            <div class="col l-3 m-2 c-2">
+                                <b>Bình luận</b>
                             </div>
-                            <div class="col l-2 m-3">
-                                <b>Email</b>
-                            </div>
-                            <div class="col l-1 m-1">
-                                <b>SDT</b>
-                            </div>
-                            <div class="col l-1 m-1">
-                                <b>Tác vụ</b>
+                            <div class="col l-2 l-1 c-1">
+                                <b>Ngày đăng</b>
                             </div>
                         </div>
 
                         <div class="row white">
-                            <div class="col l-2 m-2">
-                                <p>TK_KH_001</p>
+                            <div class="col l-2 m-2 c-2">
+                                <p>BG_0001</p>
                             </div>
-                            <div class="col l-2 m-2">
-                                <p>Nguyến Thái Học</p>
+                            <div class="col l-2 m-2 c-2">
+                                <p>KH_0001</p>
                             </div>
-                            <div class="col l-2 m-2">
-                                <p>Thai123@</p>
+                            <div class="col l-2 m-2 c-2">
+                                <p>SP_0001</p>
                             </div>
-                            <div class="col l-2 m-3">
-                                <p>Thái NoPro</p>
+                            <div class="col l-1 m-2 c-2">
+                                <p>9</p>
                             </div>
-                            <div class="col l-2 m-3">
-                                <p>Thai123@gmail.com</p>
+                            <div class="col l-3 m-2 c-2">
+                                <p>Sản phẩm rất đẹp</p>
                             </div>
-                            <div class="col l-1 m-1">
-                                <p>036600751</p>
+                            <div class="col l-2 l-1 c-1">
+                                <p>20-04-2024</p> 
                             </div>
-                            <div class="col l-1 m-1">
-                                <p><a href="AddClient.html"><i class="fa-regular fa-pen-to-square"></i></a></p>
+                        </div>
+
+                        <div class="row brow">
+                            <div class="col l-2 m-2 c-2">
+                                <p>BG_0002</p>
+                            </div>
+                            <div class="col l-2 m-2 c-2">
+                                <p>KH_0002</p>
+                            </div>
+                            <div class="col l-2 m-2 c-2">
+                                <p>SP_0002</p>
+                            </div>
+                            <div class="col l-1 m-2 c-2">
+                                <p>8</p>
+                            </div>
+                            <div class="col l-3 m-2 c-2">
+                                <p>Sản phẩm giống hình ảnh</p>
+                            </div>
+                            <div class="col l-2 l-1 c-1">
+                                <p>25-04-2024</p> 
                             </div>
                         </div>
 
                         <div class="row white">
-                            <div class="col l-2 m-2">
-                                <p>TK_KH_002</p>
+                            <div class="col l-2 m-2 c-2">
+                                <p>BG_0003</p>
                             </div>
-                            <div class="col l-2 m-2">
-                                <p>Phám Tuấn Tú</p>
+                            <div class="col l-2 m-2 c-2">
+                                <p>KH_0003</p>
                             </div>
-                            <div class="col l-2 m-2">
-                                <p>Tupo123@</p>
+                            <div class="col l-2 m-2 c-2">
+                                <p>SP_0003</p>
                             </div>
-                            <div class="col l-2 m-3">
-                                <p>Tú tuấn tu</p>
+                            <div class="col l-1 m-2 c-2">
+                                <p>9</p>
                             </div>
-                            <div class="col l-2 m-3">
-                                <p>Tu123@gmail.com</p>
+                            <div class="col l-3 m-2 c-2">
+                                <p>Sản phẩm rất đẹp, phù hợp với giá tiền</p>
                             </div>
-                            <div class="col l-1 m-1">
-                                <p>036245366</p>
-                            </div>
-                            <div class="col l-1 m-1">
-                                <p><a href="AddClient.html"><i class="fa-regular fa-pen-to-square"></i></a></p>
-                            </div>
-                        </div>
-                        <div class="row white">
-                            <div class="col l-2 m-2">
-                                <p>TK_KH_003</p>
-                            </div>
-                            <div class="col l-2 m-2">
-                                <p>Nguyến Văn Hùng</p>
-                            </div>
-                            <div class="col l-2 m-2">
-                                <p>Hung123@</p>
-                            </div>
-                            <div class="col l-2 m-3">
-                                <p>Hung xao ke</p>
-                            </div>
-                            <div class="col l-2 m-3">
-                                <p>Hung123@gmail.com</p>
-                            </div>
-                            <div class="col l-1 m-1">
-                                <p>036600751</p>
-                            </div>
-                            <div class="col l-1 m-1">
-                                <p><a href="AddClient.html"><i class="fa-regular fa-pen-to-square"></i></a></p>
+                            <div class="col l-2 l-1 c-1">
+                                <p>19-04-2024</p> 
                             </div>
                         </div>
 
-                        
+                        <div class="row brow">
+                            <div class="col l-2 m-2 c-2">
+                                <p>BG_0004</p>
+                            </div>
+                            <div class="col l-2 m-2 c-2">
+                                <p>KH_0004</p>
+                            </div>
+                            <div class="col l-2 m-2 c-2">
+                                <p>SP_0004</p>
+                            </div>
+                            <div class="col l-1 m-2 c-2">
+                                <p>6</p>
+                            </div>
+                            <div class="col l-3 m-2 c-2">
+                                <p>Sản phẩm không giống hình ảnh, ship rất lâu</p>
+                            </div>
+                            <div class="col l-2 l-1 c-1">
+                                <p>29-04-2024</p> 
+                            </div>
+                        </div>
+
+                        <div class="row white">
+                            <div class="col l-2 m-2 c-2">
+                                <p>BG_0005</p>
+                            </div>
+                            <div class="col l-2 m-2 c-2">
+                                <p>KH_0005</p>
+                            </div>
+                            <div class="col l-2 m-2 c-2">
+                                <p>SP_0005</p>
+                            </div>
+                            <div class="col l-1 m-2 c-2">
+                                <p>10</p>
+                            </div>
+                            <div class="col l-3 m-2 c-2">
+                                <p>Sản phẩm rất đẹp, giá hợp lý</p>
+                            </div>
+                            <div class="col l-2 l-1 c-1">
+                                <p>30-04-2024</p> 
+                            </div>
+                        </div>
+
+                        <div class="row brow">
+                            <div class="col l-2 m-2 c-2">
+                                <p>BG_0006</p>
+                            </div>
+                            <div class="col l-2 m-2 c-2">
+                                <p>KH_0006</p>
+                            </div>
+                            <div class="col l-2 m-2 c-2">
+                                <p>SP_0006</p>
+                            </div>
+                            <div class="col l-1 m-2 c-2">
+                                <p>8</p>
+                            </div>
+                            <div class="col l-3 m-2 c-2">
+                                <p>Sản phẩm giống hình ảnh</p>
+                            </div>
+                            <div class="col l-2 l-1 c-1">
+                                <p>25-04-2024</p> 
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
             <div class="next-all">
                 <div class="next-text">
-                    <p>Tổng số bản ghi 10 | Số hàng trên mỗi trang 6</p>
+                    <p>Tổng số bản ghi 60 | Số hàng trên mỗi trang 6</p>
                 </div>
                 <div class="next-all__number">
                     <i class="fa-solid fa-angles-left"></i>
@@ -248,7 +310,7 @@
                             <p>...</p>
                         </div>
                         <div class="text__number">
-                            <p>10</p>
+                            <p>60</p>
                         </div>
                     </div>
 
