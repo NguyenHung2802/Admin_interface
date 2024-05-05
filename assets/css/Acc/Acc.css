@@ -190,7 +190,7 @@ html,body{
 
 .container main .overview {
     background: #ECF0F5;
-    height: auto;
+    height: 400px;
 }
 
 .container main .overview .grid{
