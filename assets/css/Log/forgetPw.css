@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    background: #F5F5F5;
+}
+
+.container .add-login{
+    margin: auto;
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 690px;
+    height: 400px;
+}
+
+.container .add-login .head{
+    height: 90px;
+    display: block;
+}
+
+.container .add-login .head .head-content {
+    display: flex;
+    justify-content: center;
+    line-height: 100px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.container .add-login .head .head-icon {
+    float: right;
+    margin-top: -100px;
+    margin-right: 30px;
+    line-height: 100px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.container .add-login .head .head-icon i{
+    color: #000;
+}
+
+.container .add-login .head .head-icon a:hover i{
+    color: #FF414D;
+    opacity: 0.9;
+}
+
+.container .add-login .head .head-icon a:active i{
+    color: #FF414D;
+    opacity: 0.5;
+}
+
+
+/* Input */
+
+.container .add-login .form-add{
+    margin-bottom: 50px;
+}
+
+.container .add-login .form-add .add-new{
+    height: 85px;
+    margin-left: 20px;
+}
+
+.container .add-login .form-add .add-new p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.container .add-login .form-add .add-new input{
+    width: 650px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.container .add-login .form-add .add-new b{
+    font-size: 20px;
+}
+
+.container .add-login .submit{
+    margin: 30px 20px;
+    height: 85px;
+    /* margin-left: 20px; */
+    /* background-color: #FF414D; */
+}
+
+.container .add-login .submit input{
+    height: 40px;
+    width: 650px;
+    background-color: #FF414D;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
