@@ -188,6 +188,17 @@ html,body{
     display: flex;
 }
 
+.container .main-sidebar .sidebar .main-menu .sidebar-menu .nav-tree:hover,
+.container .main-sidebar .sidebar .main-menu .sidebar-menu .nav-tree:active{
+    background-color: #3A3F41;
+    border-left: 4px solid #3C8DBC;
+}
+
+.container .main-sidebar .sidebar .main-menu .sidebar-menu .nav-tree.active{
+    background-color: #3A3F41;
+    border-left: 4px solid #3C8DBC;
+}
+
 .container main .overview .grid .row .col{
     max-width: calc(33.33333% - 30px);
     height: 200px;
