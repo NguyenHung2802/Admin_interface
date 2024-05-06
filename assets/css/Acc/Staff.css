@@ -238,6 +238,17 @@ html,body{
     font-size: 24px;
 }
 
+.container .main-sidebar .sidebar .main-menu .sidebar-menu .nav-tree:hover,
+.container .main-sidebar .sidebar .main-menu .sidebar-menu .nav-tree:active{
+    background-color: #3A3F41;
+    border-left: 4px solid #3C8DBC;
+}
+
+.container .main-sidebar .sidebar .main-menu .sidebar-menu .nav-tree.active{
+    background-color: #3A3F41;
+    border-left: 4px solid #3C8DBC;
+}
+
 /* Search */
 .container main .manage .manage-nav .manage-search{
     margin-left: 50px;

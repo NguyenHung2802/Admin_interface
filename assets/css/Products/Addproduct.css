@@ -89,6 +89,17 @@ html,body{
     color: green;
 }
 
+.container .main-sidebar .sidebar .main-menu .sidebar-menu .nav-tree:hover,
+.container .main-sidebar .sidebar .main-menu .sidebar-menu .nav-tree:active{
+    background-color: #3A3F41;
+    border-left: 4px solid #3C8DBC;
+}
+
+.container .main-sidebar .sidebar .main-menu .sidebar-menu .nav-tree.active{
+    background-color: #3A3F41;
+    border-left: 4px solid #3C8DBC;
+}
+
 .container .main-sidebar .sidebar .main-menu .menu-feature{
     height: 50px;
     background: #141B1F;

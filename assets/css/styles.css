@@ -113,6 +113,11 @@ html,body{
     border-left: 4px solid #3C8DBC;
 }
 
+.container .main-sidebar .sidebar .main-menu .sidebar-menu .nav-tree.active{
+    background-color: #3A3F41;
+    border-left: 4px solid #3C8DBC;
+}
+
 
 .container .main-sidebar .sidebar .main-menu .sidebar-menu li{
     height: 50px;

@@ -204,6 +204,17 @@ html,body{
     /* line-height: 76px; */
 }
 
+.container .main-sidebar .sidebar .main-menu .sidebar-menu .nav-tree:hover,
+.container .main-sidebar .sidebar .main-menu .sidebar-menu .nav-tree:active{
+    background-color: #3A3F41;
+    border-left: 4px solid #3C8DBC;
+}
+
+.container .main-sidebar .sidebar .main-menu .sidebar-menu .nav-tree.active{
+    background-color: #3A3F41;
+    border-left: 4px solid #3C8DBC;
+}
+
 .container main .manage .manage-nav .manage-news .manage-time__check input{
     width: 160px;
     height: 40px;
